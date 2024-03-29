@@ -2069,6 +2069,15 @@
     },
     {
         "old": {
+            "leisure": "swimming_pool",
+            "swimming_pool": "hot_tub"
+        },
+        "replace": {
+            "leisure": "hot_tub"
+        }
+    },
+    {
+        "old": {
             "leisure": "table_tennis_table"
         },
         "replace": {

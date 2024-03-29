@@ -6286,6 +6286,16 @@
         },
         {
             "key": "man_made",
+            "value": "clarifier",
+            "description": "🄿 Wastewater Clarifier",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/waste.svg"
+        },
+        {
+            "key": "man_made",
             "value": "chimney",
             "description": "🄿 Chimney",
             "object_types": [
@@ -6931,6 +6941,16 @@
                 "node"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-skating.svg"
+        },
+        {
+            "key": "leisure",
+            "value": "hot_tub",
+            "description": "🄿 Hot Tub",
+            "object_types": [
+                "area",
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-hot-tub-person.svg"
         },
         {
             "key": "leisure",
@@ -10456,6 +10476,46 @@
             "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-handshake.svg"
         },
         {
+            "key": "climbing",
+            "value": "route_top",
+            "description": "🄿 Climbing Route Top",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/abseiling.svg"
+        },
+        {
+            "key": "climbing",
+            "value": "route_bottom",
+            "description": "🄿 Climbing Route Start",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/abseiling.svg"
+        },
+        {
+            "key": "climbing",
+            "value": "route",
+            "description": "🄿 Climbing Route",
+            "object_types": [
+                "node",
+                "way"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/abseiling.svg"
+        },
+        {
+            "key": "climbing",
+            "value": "crag",
+            "description": "🄿 Climbing Crag",
+            "object_types": [
+                "node",
+                "way",
+                "area",
+                "relation"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/abseiling.svg"
+        },
+        {
             "key": "cemetery",
             "value": "sector",
             "description": "🄿 Cemetery Section",
@@ -12330,6 +12390,15 @@
         },
         {
             "key": "amenity",
+            "value": "library_dropoff",
+            "description": "🄿 Book Return Drop Box",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/library-15.svg"
+        },
+        {
+            "key": "amenity",
             "value": "library",
             "description": "🄿 Library",
             "object_types": [
@@ -12614,6 +12683,16 @@
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/pitch-15.svg"
+        },
+        {
+            "key": "amenity",
+            "value": "dog_toilet",
+            "description": "🄿 Dog Toilet",
+            "object_types": [
+                "area",
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/dog-park-15.svg"
         },
         {
             "key": "amenity",
@@ -13515,7 +13594,7 @@
                 "node",
                 "area"
             ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/restaurant-noodle-15.svg"
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-spoon.svg"
         },
         {
             "key": "cuisine",
@@ -15346,6 +15425,46 @@
             "description": "🄵 Type"
         },
         {
+            "key": "swimming_pool",
+            "value": "swimming",
+            "description": "🄵🅅 Type: Lap Pool"
+        },
+        {
+            "key": "swimming_pool",
+            "value": "plunge",
+            "description": "🄵🅅 Type: Diving"
+        },
+        {
+            "key": "swimming_pool",
+            "value": "wading",
+            "description": "🄵🅅 Type: Wading / Leisure"
+        },
+        {
+            "key": "swimming_pool",
+            "value": "spa",
+            "description": "🄵🅅 Type: Spa"
+        },
+        {
+            "key": "swimming_pool",
+            "value": "wave_pool",
+            "description": "🄵🅅 Type: Wave Pool"
+        },
+        {
+            "key": "swimming_pool",
+            "value": "lazy_river",
+            "description": "🄵🅅 Type: Lazy River"
+        },
+        {
+            "key": "swimming_pool",
+            "value": "personal",
+            "description": "🄵🅅 Type: Personal / Backyard"
+        },
+        {
+            "key": "swimming_pool",
+            "value": "kids",
+            "description": "🄵🅅 Type: Kids Pool"
+        },
+        {
             "key": "surveillance",
             "description": "🄵 Surveillance Kind"
         },
@@ -16452,7 +16571,7 @@
         },
         {
             "key": "ref",
-            "description": "🄵 Taxiway Name, 🄵 Stop Number, 🄵 Section Number, 🄵 Runway Number, 🄵 Route Number, 🄵 Room Number, 🄵 Road Number, 🄵 Platform Number, 🄵 Junction Number, 🄵 Hole Number, 🄵 Bridge Number, 🄵 Gate Number, 🄵 Reference Code"
+            "description": "🄵 Taxiway Name, 🄵 Stop Number, 🄵 Section Number, 🄵 Runway Number, 🄵 Route Number, 🄵 Room Number, 🄵 Road Number, 🄵 Line Number, 🄵 Platform Number, 🄵 Junction Number, 🄵 Hole Number, 🄵 Bridge Number, 🄵 Gate Number, 🄵 Reference Code"
         },
         {
             "key": "recycling_type",
@@ -17842,6 +17961,11 @@
         },
         {
             "key": "historic",
+            "value": "millstone",
+            "description": "🄵🅅 Type: Millstone"
+        },
+        {
+            "key": "historic",
             "value": "mine",
             "description": "🄵🅅 Type: Mine"
         },
@@ -18375,13 +18499,18 @@
         },
         {
             "key": "dog",
-            "value": "yes",
-            "description": "🄵🅅 Dogs: Allowed"
+            "value": "leashed",
+            "description": "🄵🅅 Dogs: Leashed Only"
         },
         {
             "key": "dog",
-            "value": "leashed",
-            "description": "🄵🅅 Dogs: Leashed Only"
+            "value": "unleashed",
+            "description": "🄵🅅 Dogs: Leashes Not Required"
+        },
+        {
+            "key": "dog",
+            "value": "yes",
+            "description": "🄵🅅 Dogs: Allowed"
         },
         {
             "key": "dog",
@@ -20394,6 +20523,10 @@
             "description": "🄵🅅 Surveillance Type: Automatic License Plate Reader"
         },
         {
+            "key": "summit:cross",
+            "description": "🄵 Summit Cross"
+        },
+        {
             "key": "subject:wikidata",
             "description": "🄵 Subject Wikidata"
         },
@@ -20782,6 +20915,44 @@
         {
             "key": "ref:FR:SIRET",
             "description": "🄵 SIRET Number"
+        },
+        {
+            "key": "railway:track_ref",
+            "description": "🄵 Track Number"
+        },
+        {
+            "key": "railway:switch",
+            "description": "🄵 Switch Type"
+        },
+        {
+            "key": "railway:switch",
+            "value": "default",
+            "description": "🄵🅅 Switch Type: Normal Switch"
+        },
+        {
+            "key": "railway:switch",
+            "value": "double_slip",
+            "description": "🄵🅅 Switch Type: Double-slip Switch"
+        },
+        {
+            "key": "railway:switch",
+            "value": "single_slip",
+            "description": "🄵🅅 Switch Type: Single-slip Switch"
+        },
+        {
+            "key": "railway:switch",
+            "value": "wye",
+            "description": "🄵🅅 Switch Type: Wye Switch"
+        },
+        {
+            "key": "railway:switch",
+            "value": "three_way",
+            "description": "🄵🅅 Switch Type: Three-way Switch"
+        },
+        {
+            "key": "railway:switch",
+            "value": "abt",
+            "description": "🄵🅅 Switch Type: Abt Switch"
         },
         {
             "key": "railway:position",
@@ -22161,6 +22332,159 @@
         {
             "key": "contact:facebook",
             "description": "🄵 Facebook Username or URL"
+        },
+        {
+            "key": "climbing:summit_log",
+            "description": "🄵 Summit Log"
+        },
+        {
+            "key": "climbing:routes",
+            "description": "🄵 Number of Routes"
+        },
+        {
+            "key": "climbing:rock",
+            "description": "🄵 Rock Type"
+        },
+        {
+            "key": "climbing:rock",
+            "value": "limestone",
+            "description": "🄵🅅 Rock Type: Limestone"
+        },
+        {
+            "key": "climbing:rock",
+            "value": "sandstone",
+            "description": "🄵🅅 Rock Type: Sandstone"
+        },
+        {
+            "key": "climbing:rock",
+            "value": "granite",
+            "description": "🄵🅅 Rock Type: Granite"
+        },
+        {
+            "key": "climbing:rock",
+            "value": "quartzite",
+            "description": "🄵🅅 Rock Type: Quartzite"
+        },
+        {
+            "key": "climbing:rock",
+            "value": "gritstone",
+            "description": "🄵🅅 Rock Type: Gritstone"
+        },
+        {
+            "key": "climbing:rock",
+            "value": "gneiss",
+            "description": "🄵🅅 Rock Type: Gneiss"
+        },
+        {
+            "key": "climbing:rock",
+            "value": "porphyry",
+            "description": "🄵🅅 Rock Type: Porphyry"
+        },
+        {
+            "key": "climbing:rock",
+            "value": "basalt",
+            "description": "🄵🅅 Rock Type: Basalt"
+        },
+        {
+            "key": "climbing:rock",
+            "value": "conglomerate",
+            "description": "🄵🅅 Rock Type: Conglomerate"
+        },
+        {
+            "key": "climbing:rock",
+            "value": "slate",
+            "description": "🄵🅅 Rock Type: Slate"
+        },
+        {
+            "key": "climbing:quality",
+            "description": "🄵 Rock Quality"
+        },
+        {
+            "key": "climbing:quality",
+            "value": "fragile",
+            "description": "🄵🅅 Rock Quality: `fragile`"
+        },
+        {
+            "key": "climbing:quality",
+            "value": "medium",
+            "description": "🄵🅅 Rock Quality: `medium`"
+        },
+        {
+            "key": "climbing:quality",
+            "value": "solid",
+            "description": "🄵🅅 Rock Quality: `solid`"
+        },
+        {
+            "key": "climbing:orientation",
+            "description": "🄵 Orientation"
+        },
+        {
+            "key": "climbing:orientation",
+            "value": "N",
+            "description": "🄵🅅 Orientation: North"
+        },
+        {
+            "key": "climbing:orientation",
+            "value": "NE",
+            "description": "🄵🅅 Orientation: North-East"
+        },
+        {
+            "key": "climbing:orientation",
+            "value": "E",
+            "description": "🄵🅅 Orientation: East"
+        },
+        {
+            "key": "climbing:orientation",
+            "value": "SE",
+            "description": "🄵🅅 Orientation: South-East"
+        },
+        {
+            "key": "climbing:orientation",
+            "value": "S",
+            "description": "🄵🅅 Orientation: South"
+        },
+        {
+            "key": "climbing:orientation",
+            "value": "SW",
+            "description": "🄵🅅 Orientation: South-West"
+        },
+        {
+            "key": "climbing:orientation",
+            "value": "W",
+            "description": "🄵🅅 Orientation: West"
+        },
+        {
+            "key": "climbing:orientation",
+            "value": "NW",
+            "description": "🄵🅅 Orientation: North-West"
+        },
+        {
+            "key": "climbing:length",
+            "description": "🄵 Length (m)"
+        },
+        {
+            "key": "climbing:bolts",
+            "description": "🄵 Number of Bolts"
+        },
+        {
+            "key": "climbing:bolted",
+            "description": "🄵 Bolted"
+        },
+        {
+            "key": "climbing:grade:yds_class",
+            "description": "🄵 Grade (YDS)"
+        },
+        {
+            "key": "climbing:grade:uiaa",
+            "description": "🄵 Grade (UIAA)"
+        },
+        {
+            "key": "climbing:grade:saxon",
+            "description": "🄵 Grade (Saxon)"
+        },
+        {
+            "key": "climbing:grade:french",
+            "description": "🄵 Grade (French)"
         },
         {
             "key": "capacity:tents",

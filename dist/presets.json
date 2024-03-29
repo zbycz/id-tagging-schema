@@ -5648,6 +5648,10 @@
     },
     "railway/switch": {
         "icon": "temaki-junction",
+        "fields": [
+            "railway/switch",
+            "ref"
+        ],
         "geometry": [
             "vertex"
         ],
@@ -5713,11 +5717,13 @@
     "railway/rail": {
         "icon": "temaki-railway_track",
         "fields": [
-            "{railway/light_rail}"
+            "{railway/light_rail}",
+            "railway/track_ref"
         ],
         "moreFields": [
             "{railway/light_rail}",
-            "highspeed"
+            "highspeed",
+            "ref_rail"
         ],
         "geometry": [
             "line"
@@ -9626,6 +9632,10 @@
             "name",
             "ele_node"
         ],
+        "moreFields": [
+            "{natural}",
+            "summit/cross"
+        ],
         "geometry": [
             "point",
             "vertex"
@@ -11311,6 +11321,21 @@
             "man_made": "clearcut"
         }
     },
+    "man_made/clarifier": {
+        "icon": "temaki-waste",
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "tags": {
+            "man_made": "clarifier"
+        },
+        "addTags": {
+            "man_made": "clarifier",
+            "natural": "water",
+            "water": "wastewater"
+        }
+    },
     "man_made/chimney": {
         "icon": "temaki-chimney",
         "fields": [
@@ -12735,6 +12760,28 @@
             "leisure": "ice_rink"
         }
     },
+    "leisure/hot_tub": {
+        "icon": "fas-hot-tub-person",
+        "fields": [
+            "access_simple",
+            "location_pool"
+        ],
+        "moreFields": [
+            "level",
+            "gender",
+            "lit",
+            "nudism",
+            "opening_hours",
+            "operator"
+        ],
+        "geometry": [
+            "area",
+            "point"
+        ],
+        "tags": {
+            "leisure": "hot_tub"
+        }
+    },
     "leisure/horse_riding": {
         "icon": "maki-horse-riding",
         "fields": [
@@ -12957,7 +13004,7 @@
         "moreFields": [
             "{@templates/contact}",
             "{@templates/internet_access}",
-            "dog",
+            "dog_yes",
             "gnis/feature_id-US",
             "ref"
         ],
@@ -19980,6 +20027,107 @@
             "club": "scout"
         }
     },
+    "climbing/route_top": {
+        "icon": "temaki-abseiling",
+        "geometry": [
+            "point",
+            "vertex"
+        ],
+        "fields": [
+            "{climbing/route}"
+        ],
+        "moreFields": [
+            "{climbing/route}"
+        ],
+        "tags": {
+            "climbing": "route_top"
+        },
+        "addTags": {
+            "sport": "climbing",
+            "climbing": "route_top"
+        }
+    },
+    "climbing/route_bottom": {
+        "icon": "temaki-abseiling",
+        "geometry": [
+            "point",
+            "vertex"
+        ],
+        "fields": [
+            "{climbing/route}"
+        ],
+        "moreFields": [
+            "{climbing/route}"
+        ],
+        "tags": {
+            "climbing": "route_bottom"
+        },
+        "addTags": {
+            "sport": "climbing",
+            "climbing": "route_bottom"
+        }
+    },
+    "climbing/route": {
+        "icon": "temaki-abseiling",
+        "geometry": [
+            "point",
+            "line"
+        ],
+        "fields": [
+            "name",
+            "climbing/length",
+            "climbing/bolted",
+            "climbing/rock"
+        ],
+        "moreFields": [
+            "climbing/grade/uiaa",
+            "climbing/grade/french",
+            "climbing/grade/saxon",
+            "climbing/grade/yds_class",
+            "climbing/bolts",
+            "climbing/orientation",
+            "climbing/quality",
+            "climbing/summit_log",
+            "website",
+            "ele"
+        ],
+        "tags": {
+            "climbing": "route"
+        },
+        "addTags": {
+            "sport": "climbing",
+            "climbing": "route"
+        }
+    },
+    "climbing/crag": {
+        "icon": "temaki-abseiling",
+        "geometry": [
+            "point",
+            "line",
+            "area",
+            "relation"
+        ],
+        "fields": [
+            "name"
+        ],
+        "moreFields": [
+            "climbing/length",
+            "climbing/routes",
+            "climbing/bolted",
+            "climbing/orientation",
+            "climbing/quality",
+            "climbing/rock",
+            "website",
+            "ele"
+        ],
+        "tags": {
+            "climbing": "crag"
+        },
+        "addTags": {
+            "sport": "climbing",
+            "climbing": "crag"
+        }
+    },
     "cemetery/sector": {
         "icon": "maki-cemetery",
         "fields": [
@@ -23554,6 +23702,26 @@
             "amenity": "loading_dock"
         }
     },
+    "amenity/library_dropoff": {
+        "icon": "maki-library",
+        "fields": [
+            "operator",
+            "operator/type"
+        ],
+        "moreFields": [
+            "collection_times",
+            "colour",
+            "ref/isil",
+            "lit"
+        ],
+        "geometry": [
+            "point",
+            "vertex"
+        ],
+        "tags": {
+            "amenity": "library_dropoff"
+        }
+    },
     "amenity/library": {
         "icon": "maki-library",
         "fields": [
@@ -24270,6 +24438,30 @@
         ],
         "tags": {
             "amenity": "dojo"
+        }
+    },
+    "amenity/dog_toilet": {
+        "icon": "maki-dog-park",
+        "fields": [
+            "name",
+            "operator",
+            "operator/type",
+            "address",
+            "access_simple",
+            "website"
+        ],
+        "moreFields": [
+            "{@templates/contact}",
+            "dog_yes",
+            "gnis/feature_id-US",
+            "ref"
+        ],
+        "geometry": [
+            "area",
+            "point"
+        ],
+        "tags": {
+            "amenity": "dog_toilet"
         }
     },
     "amenity/doctors": {
@@ -26245,7 +26437,7 @@
         }
     },
     "amenity/restaurant/thai": {
-        "icon": "maki-restaurant-noodle",
+        "icon": "fas-spoon",
         "geometry": [
             "point",
             "area"

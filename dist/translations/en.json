@@ -428,7 +428,17 @@
                     }
                 },
                 "swimming_pool": {
-                    "label": "Type"
+                    "label": "Type",
+                    "options": {
+                        "swimming": "Lap Pool",
+                        "plunge": "Diving",
+                        "wading": "Wading / Leisure",
+                        "spa": "Spa",
+                        "wave_pool": "Wave Pool",
+                        "lazy_river": "Lazy River",
+                        "personal": "Personal / Backyard",
+                        "kids": "Kids Pool"
+                    }
                 },
                 "surveillance": {
                     "label": "Surveillance Kind"
@@ -939,6 +949,9 @@
                 },
                 "ref_road_number": {
                     "label": "Road Number"
+                },
+                "ref_rail": {
+                    "label": "Line Number"
                 },
                 "ref_platform": {
                     "label": "Platform Number"
@@ -1727,6 +1740,7 @@
                         "manor": "Manor House",
                         "memorial": "Memorial",
                         "milestone": "Milestone",
+                        "millstone": "Millstone",
                         "mine": "Mine",
                         "mine_shaft": "Mine Shaft",
                         "monument": "Monument",
@@ -2068,12 +2082,14 @@
                 "door": {
                     "label": "Door"
                 },
+                "dog_yes": {},
                 "dog": {
                     "label": "Dogs",
                     "terms": "animals,pets",
                     "options": {
                         "yes": "Allowed",
                         "leashed": "Leashed Only",
+                        "unleashed": "Leashes Not Required",
                         "no": "Not Allowed"
                     }
                 },
@@ -3291,6 +3307,10 @@
                         "ALPR": "Automatic License Plate Reader"
                     }
                 },
+                "summit/cross": {
+                    "label": "Summit Cross",
+                    "terms": "cross"
+                },
                 "subject/wikidata": {
                     "label": "Subject Wikidata"
                 },
@@ -3492,6 +3512,20 @@
                 "ref/FR/siret-FR": {
                     "label": "SIRET Number",
                     "terms": "french company identification number,siret"
+                },
+                "railway/track_ref": {
+                    "label": "Track Number"
+                },
+                "railway/switch": {
+                    "label": "Switch Type",
+                    "options": {
+                        "default": "Normal Switch",
+                        "double_slip": "Double-slip Switch",
+                        "single_slip": "Single-slip Switch",
+                        "wye": "Wye Switch",
+                        "three_way": "Three-way Switch",
+                        "abt": "Abt Switch"
+                    }
                 },
                 "railway/position": {
                     "label": "Milestone Position",
@@ -4115,6 +4149,69 @@
                 "contact/facebook": {
                     "label": "Facebook Username or URL",
                     "placeholder": "https://www.facebook.com/LocalBusiness"
+                },
+                "climbing/summit_log": {
+                    "label": "Summit Log",
+                    "terms": "route log,summit register"
+                },
+                "climbing/routes": {
+                    "label": "Number of Routes"
+                },
+                "climbing/rock": {
+                    "label": "Rock Type",
+                    "options": {
+                        "limestone": "Limestone",
+                        "sandstone": "Sandstone",
+                        "granite": "Granite",
+                        "quartzite": "Quartzite",
+                        "gritstone": "Gritstone",
+                        "gneiss": "Gneiss",
+                        "porphyry": "Porphyry",
+                        "basalt": "Basalt",
+                        "conglomerate": "Conglomerate",
+                        "slate": "Slate"
+                    }
+                },
+                "climbing/quality": {
+                    "label": "Rock Quality"
+                },
+                "climbing/orientation": {
+                    "label": "Orientation",
+                    "options": {
+                        "N": "North",
+                        "NE": "North-East",
+                        "E": "East",
+                        "SE": "South-East",
+                        "S": "South",
+                        "SW": "South-West",
+                        "W": "West",
+                        "NW": "North-West"
+                    }
+                },
+                "climbing/length": {
+                    "label": "Length (m)"
+                },
+                "climbing/bolts": {
+                    "label": "Number of Bolts"
+                },
+                "climbing/bolted": {
+                    "label": "Bolted"
+                },
+                "climbing/grade/yds_class": {
+                    "label": "Grade (YDS)",
+                    "placeholder": "5.10a"
+                },
+                "climbing/grade/uiaa": {
+                    "label": "Grade (UIAA)",
+                    "placeholder": "6-"
+                },
+                "climbing/grade/saxon": {
+                    "label": "Grade (Saxon)",
+                    "placeholder": "VIIa"
+                },
+                "climbing/grade/french": {
+                    "label": "Grade (French)",
+                    "placeholder": "5c"
                 },
                 "capacity/tents": {
                     "label": "Capacity (Tents)",
@@ -6842,6 +6939,9 @@
                     "name": "Clearcut Forest",
                     "terms": "cut,forest,lumber,tree,wood"
                 },
+                "man_made/clarifier": {
+                    "name": "Wastewater Clarifier"
+                },
                 "man_made/chimney": {
                     "name": "Chimney"
                 },
@@ -7110,6 +7210,10 @@
                 "leisure/ice_rink": {
                     "name": "Ice Rink",
                     "terms": "hockey,skating,curling"
+                },
+                "leisure/hot_tub": {
+                    "name": "Hot Tub",
+                    "terms": "jacuzzi,spa"
                 },
                 "leisure/horse_riding": {
                     "name": "Horseback Riding Center",
@@ -8594,6 +8698,22 @@
                     "name": "Scout Group",
                     "terms": "guide,pathfinder,scouting"
                 },
+                "climbing/route_top": {
+                    "name": "Climbing Route Top",
+                    "terms": "rock climbing,climbing"
+                },
+                "climbing/route_bottom": {
+                    "name": "Climbing Route Start",
+                    "terms": "rock climbing,climbing"
+                },
+                "climbing/route": {
+                    "name": "Climbing Route",
+                    "terms": "rock climbing,climbing"
+                },
+                "climbing/crag": {
+                    "name": "Climbing Crag",
+                    "terms": "rock climbing,climbing"
+                },
                 "cemetery/sector": {
                     "name": "Cemetery Section",
                     "terms": "burial ground,cemetary,cemetery,churchyard,columbarium,grave yard,graveyard,mausoleum,tomb"
@@ -9330,6 +9450,10 @@
                     "name": "Loading Dock",
                     "terms": "door,loading bay,shipping,unloading,warehouse"
                 },
+                "amenity/library_dropoff": {
+                    "name": "Book Return Drop Box",
+                    "terms": "book drop-off,book return,library drop-off,library book return,library return"
+                },
                 "amenity/library": {
                     "name": "Library",
                     "terms": "book"
@@ -9450,6 +9574,10 @@
                 "amenity/dojo": {
                     "name": "Dojo / Martial Arts Academy",
                     "terms": "martial arts,dojang"
+                },
+                "amenity/dog_toilet": {
+                    "name": "Dog Toilet",
+                    "terms": "dog poo area,dog excrement,dog excrete,dog urine,dog urinate,dog relief area"
                 },
                 "amenity/doctors": {
                     "name": "Doctor",

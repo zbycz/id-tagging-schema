@@ -494,7 +494,19 @@
     },
     "swimming_pool": {
         "key": "swimming_pool",
-        "type": "combo"
+        "type": "combo",
+        "autoSuggestions": false,
+        "customValues": true,
+        "options": [
+            "swimming",
+            "plunge",
+            "wading",
+            "spa",
+            "wave_pool",
+            "lazy_river",
+            "personal",
+            "kids"
+        ]
     },
     "surveillance": {
         "key": "surveillance",
@@ -1130,6 +1142,10 @@
         "type": "text"
     },
     "ref_road_number": {
+        "key": "ref",
+        "type": "text"
+    },
+    "ref_rail": {
         "key": "ref",
         "type": "text"
     },
@@ -2190,6 +2206,7 @@
             "manor",
             "memorial",
             "milestone",
+            "millstone",
             "mine",
             "mine_shaft",
             "monument",
@@ -2654,6 +2671,18 @@
         "key": "door",
         "type": "combo"
     },
+    "dog_yes": {
+        "key": "dog",
+        "type": "combo",
+        "label": "{dog}",
+        "options": [
+            "leashed",
+            "unleashed"
+        ],
+        "stringsCrossReference": "{dog}",
+        "autoSuggestions": false,
+        "customValues": false
+    },
     "dog": {
         "key": "dog",
         "type": "combo",
@@ -2662,6 +2691,7 @@
         "options": [
             "yes",
             "leashed",
+            "unleashed",
             "no"
         ]
     },
@@ -4173,6 +4203,10 @@
             "ALPR"
         ]
     },
+    "summit/cross": {
+        "key": "summit:cross",
+        "type": "check"
+    },
     "subject/wikidata": {
         "key": "subject:wikidata",
         "keys": [
@@ -4519,6 +4553,24 @@
                 "fr"
             ]
         }
+    },
+    "railway/track_ref": {
+        "key": "railway:track_ref",
+        "type": "text"
+    },
+    "railway/switch": {
+        "key": "railway:switch",
+        "type": "combo",
+        "autoSuggestions": false,
+        "customValues": true,
+        "options": [
+            "default",
+            "double_slip",
+            "single_slip",
+            "wye",
+            "three_way",
+            "abt"
+        ]
     },
     "railway/position": {
         "key": "railway:position",
@@ -5663,6 +5715,84 @@
     "contact/facebook": {
         "key": "contact:facebook",
         "type": "url"
+    },
+    "climbing/summit_log": {
+        "key": "climbing:summit_log",
+        "type": "check"
+    },
+    "climbing/routes": {
+        "key": "climbing:routes",
+        "type": "number",
+        "minValue": 0
+    },
+    "climbing/rock": {
+        "key": "climbing:rock",
+        "type": "combo",
+        "options": [
+            "limestone",
+            "sandstone",
+            "granite",
+            "quartzite",
+            "gritstone",
+            "gneiss",
+            "porphyry",
+            "basalt",
+            "conglomerate",
+            "slate"
+        ]
+    },
+    "climbing/quality": {
+        "key": "climbing:quality",
+        "type": "combo",
+        "options": [
+            "fragile",
+            "medium",
+            "solid"
+        ]
+    },
+    "climbing/orientation": {
+        "key": "climbing:orientation",
+        "type": "combo",
+        "options": [
+            "N",
+            "NE",
+            "E",
+            "SE",
+            "S",
+            "SW",
+            "W",
+            "NW"
+        ]
+    },
+    "climbing/length": {
+        "key": "climbing:length",
+        "type": "number",
+        "minValue": 0
+    },
+    "climbing/bolts": {
+        "key": "climbing:bolts",
+        "type": "number",
+        "minValue": 0
+    },
+    "climbing/bolted": {
+        "key": "climbing:bolted",
+        "type": "check"
+    },
+    "climbing/grade/yds_class": {
+        "key": "climbing:grade:yds_class",
+        "type": "text"
+    },
+    "climbing/grade/uiaa": {
+        "key": "climbing:grade:uiaa",
+        "type": "text"
+    },
+    "climbing/grade/saxon": {
+        "key": "climbing:grade:saxon",
+        "type": "text"
+    },
+    "climbing/grade/french": {
+        "key": "climbing:grade:french",
+        "type": "text"
     },
     "capacity/tents": {
         "key": "capacity:tents",

@@ -1000,6 +1000,101 @@ en:
         placeholder: 1 m, 20 cm, 30"…
         # 'terms: dbh,diameter at breast height'
         terms: '[translate with synonyms or related terms for ''Circumference (at Breast Height)'', separated by commas]'
+      climbing/bolted:
+        # climbing:bolted=*
+        label: Bolted
+        terms: '[translate with synonyms or related terms for ''Bolted'', separated by commas]'
+      climbing/bolts:
+        # climbing:bolts=*
+        label: Number of Bolts
+        terms: '[translate with synonyms or related terms for ''Number of Bolts'', separated by commas]'
+      climbing/grade/french:
+        # climbing:grade:french=*
+        label: Grade (French)
+        # climbing/grade/french field placeholder
+        placeholder: 5c
+        terms: '[translate with synonyms or related terms for ''Grade (French)'', separated by commas]'
+      climbing/grade/saxon:
+        # climbing:grade:saxon=*
+        label: Grade (Saxon)
+        # climbing/grade/saxon field placeholder
+        placeholder: VIIa
+        terms: '[translate with synonyms or related terms for ''Grade (Saxon)'', separated by commas]'
+      climbing/grade/uiaa:
+        # climbing:grade:uiaa=*
+        label: Grade (UIAA)
+        # climbing/grade/uiaa field placeholder
+        placeholder: 6-
+        terms: '[translate with synonyms or related terms for ''Grade (UIAA)'', separated by commas]'
+      climbing/grade/yds_class:
+        # climbing:grade:yds_class=*
+        label: Grade (YDS)
+        # climbing/grade/yds_class field placeholder
+        placeholder: 5.10a
+        terms: '[translate with synonyms or related terms for ''Grade (YDS)'', separated by commas]'
+      climbing/length:
+        # climbing:length=*
+        label: Length (m)
+        terms: '[translate with synonyms or related terms for ''Length (m)'', separated by commas]'
+      climbing/orientation:
+        # climbing:orientation=*
+        label: Orientation
+        options:
+          # climbing:orientation=E
+          E: East
+          # climbing:orientation=N
+          'N': North
+          # climbing:orientation=NE
+          NE: North-East
+          # climbing:orientation=NW
+          NW: North-West
+          # climbing:orientation=S
+          S: South
+          # climbing:orientation=SE
+          SE: South-East
+          # climbing:orientation=SW
+          SW: South-West
+          # climbing:orientation=W
+          W: West
+        terms: '[translate with synonyms or related terms for ''Orientation'', separated by commas]'
+      climbing/quality:
+        # climbing:quality=*
+        label: Rock Quality
+        terms: '[translate with synonyms or related terms for ''Rock Quality'', separated by commas]'
+      climbing/rock:
+        # climbing:rock=*
+        label: Rock Type
+        options:
+          # climbing:rock=basalt
+          basalt: Basalt
+          # climbing:rock=conglomerate
+          conglomerate: Conglomerate
+          # climbing:rock=gneiss
+          gneiss: Gneiss
+          # climbing:rock=granite
+          granite: Granite
+          # climbing:rock=gritstone
+          gritstone: Gritstone
+          # climbing:rock=limestone
+          limestone: Limestone
+          # climbing:rock=porphyry
+          porphyry: Porphyry
+          # climbing:rock=quartzite
+          quartzite: Quartzite
+          # climbing:rock=sandstone
+          sandstone: Sandstone
+          # climbing:rock=slate
+          slate: Slate
+        terms: '[translate with synonyms or related terms for ''Rock Type'', separated by commas]'
+      climbing/routes:
+        # climbing:routes=*
+        label: Number of Routes
+        terms: '[translate with synonyms or related terms for ''Number of Routes'', separated by commas]'
+      climbing/summit_log:
+        # climbing:summit_log=*
+        label: Summit Log
+        # 'terms: route log,summit register'
+        terms: '[translate with synonyms or related terms for ''Summit Log'', separated by commas]'
       clothes:
         # clothes=*
         label: Clothes
@@ -8246,6 +8341,26 @@ en:
         name: Cemetery Section
         # 'terms: burial ground,cemetary,cemetery,churchyard,columbarium,grave yard,graveyard,mausoleum,tomb'
         terms: <translate with synonyms or related terms for 'Cemetery Section', separated by commas>
+      climbing/crag:
+        # climbing=crag | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
+        name: Climbing Crag
+        # 'terms: rock climbing,climbing'
+        terms: <translate with synonyms or related terms for 'Climbing Crag', separated by commas>
+      climbing/route:
+        # climbing=route | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
+        name: Climbing Route
+        # 'terms: rock climbing,climbing'
+        terms: <translate with synonyms or related terms for 'Climbing Route', separated by commas>
+      climbing/route_bottom:
+        # climbing=route_bottom | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
+        name: Climbing Route Start
+        # 'terms: rock climbing,climbing'
+        terms: <translate with synonyms or related terms for 'Climbing Route Start', separated by commas>
+      climbing/route_top:
+        # climbing=route_top | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
+        name: Climbing Route Top
+        # 'terms: rock climbing,climbing'
+        terms: <translate with synonyms or related terms for 'Climbing Route Top', separated by commas>
       club:
         # club=* | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
         name: Club
